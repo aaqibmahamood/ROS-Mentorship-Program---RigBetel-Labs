@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="Random_Pub" pkg="rmp37" type="pub.py" output="screen"/>
+	<node name="Random_Sub" pkg="rmp37" type="sub.py" />
+    
+</launch>
