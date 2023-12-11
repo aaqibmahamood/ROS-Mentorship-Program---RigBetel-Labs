@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!-- Square Shape -->
+    <group ns="turtlesim1">
+        <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+        <node pkg="rmp37" name="square" type="square.py" output="screen" />
+    </group>
+
+        <!-- Rectangle Shape -->
+    <group ns="turtlesim2">
+        <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+        <node pkg="rmp37" name="rectangle" type="rectangle.py" output="screen" />
+    </group>
+
+        <!-- Triangle Shape -->
+    <group ns="turtlesim3">
+        <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+        <node pkg="rmp37" name="triangle" type="triangle.py" output="screen" />
+    </group>
+    
+    <!-- Star Shape  -->
+    <group ns="turtlesim4">
+        <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+        <node pkg="rmp37" name="star" type="star.py" output="screen" />
+    </group>
+
+</launch>
