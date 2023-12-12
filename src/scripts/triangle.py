@@ -5,7 +5,7 @@ from geometry_msgs.msg  import Twist
 def triangle():
     rospy.init_node('triangle', anonymous=True)
     pub = rospy.Publisher("/turtlesim3/turtle1/cmd_vel", Twist, queue_size=20)
-    rate = rospy.Rate(1) #hz
+    rate = rospy.Rate(1)#hz
     vel_msg = Twist()
     rate.sleep()
     
